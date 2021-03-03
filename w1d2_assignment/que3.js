@@ -7,5 +7,7 @@ and 6 boxes in each stack your program must output 13.*/
 const prompt = require("prompt-sync")();
 let tot_boxes = parseInt(prompt("Enter total boxes:"));
 let per_stack = parseInt(prompt("Enter # of boxes in each stack: "))
+
 let no_stack  = Math.ceil((tot_boxes/per_stack));
+
 console.log(`Number of stack needed for ${tot_boxes} boxes are ${no_stack} stack`);
