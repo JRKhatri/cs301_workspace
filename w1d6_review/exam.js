@@ -6,6 +6,7 @@ function addfirstLast(n){
         first = Math.floor(first/10)
     }
     sum =  last + first;
+    
 
 if (sum % 2===0){
     return true;
