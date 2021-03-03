@@ -31,3 +31,23 @@ for(let i =5; i>=1; i--){
 console.log(output2);
 console.log("--------------------")
 
+let print = "";
+for(let i = 5; i>0; i--){
+    for(let j = i; j>0; j--){
+        print += j;
+    }
+    print +="\n";
+
+}
+console.log(print);
+
+
+let output3 = "";
+for(let i = 1; i<=5 ; i++){
+    for( let j = i; j<=5; j++){
+        output3 += i;
+    }
+    output3 += "\n";
+}
+console.log(output);
+

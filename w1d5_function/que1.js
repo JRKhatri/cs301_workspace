@@ -6,20 +6,18 @@ checkPrime to see if the entered number is a prime number or not. */
 
 function checkPrime(num){
     if(num === 2){
-        console.log("Prime");
-        return;
+        return true;
     } else if (num>2){
         for(let i =2; i<num; i++){
             if(num % i === 0){
-                console.log("Not Prime");
-                return ;
+            return  false;
             }
 
         }
     }
-    console.log("Prime");
-    return;
+    
+    return true;
 }
 const prompt = require("prompt-sync")();
 let number = parseInt(prompt("Please enter a positive number: "));
-checkPrime(number);
+console.log(checkPrime(number));

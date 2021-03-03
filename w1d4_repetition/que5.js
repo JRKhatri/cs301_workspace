@@ -6,6 +6,6 @@ let input = parseInt(prompt("Enter digits: "));
 let sum = 0;
 while(input !=0){
     sum += input % 10;
-    input /=  10;
+    input = Math.floor(input/ 10);
 }
 console.log(Math.floor(sum));

@@ -4,17 +4,20 @@
  
  const prompt = require("prompt-sync")();
  const correct_pin = 1234;
- let i = 1;
- let enter_pin = parseInt(prompt("Enter your pin: "));
- for( let i = 0; i<3; i++){
-     if(enter_pin === correct_pin){
-         console.log("Correct, welcome back");
-         break;
-     }if(enter_pin != correct_pin){
-        console.log("Incorrect, try again ")
-         enter_pin = parseInt(prompt("Enter your pin"));
-     } if(i == 2){
-     console.log("Sorry but you have been locked out.")
-     }
-}
- 
+ let attempt = 0;
+ do{
+    
+     let enter = + prompt("Enter your PIN: ");
+     if(enter === correct_pin){
+        console.log("Correct, welcome back");
+        break;
+    }else if(enter != correct_pin && attempt <2){
+       console.log("Incorrect, try again ")
+
+    } if(attempt ===2){
+        console.log("Sorry but you have been locked out!")
+    }
+    
+    
+    attempt++
+} while (attempt<3)

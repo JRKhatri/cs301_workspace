@@ -11,3 +11,4 @@ let lowest_rate = Math.round(max_rate * 0.65);
 let highest_rate = Math.round(max_rate * 0.85);
 console.log(`Slowest rate for ${age} is ${lowest_rate} per minute`);
 console.log(`Fastest rate is ${highest_rate} per minute`);
+console.log(2);
