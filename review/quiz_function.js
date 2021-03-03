@@ -7,6 +7,7 @@ let number = + prompt ("Enter number: ");
 function isReversedPrime(num){
     let for_rev = reverse(num);
     checkPrime(for_rev);
+    
 }
 isReversedPrime(number);
 
