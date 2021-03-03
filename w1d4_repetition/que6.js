@@ -49,5 +49,6 @@ for(let i = 1; i<=5 ; i++){
     }
     output3 += "\n";
 }
+
 console.log(output);
 
