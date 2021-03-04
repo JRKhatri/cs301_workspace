@@ -1,7 +1,7 @@
 "use strict";
 console.log("My first JS code");
-let x = 10;
-let y = 15;
-let z = x +y;
-console.log(z);
+let xxx = 10;
+let yyy = 15;
+let zzz = xxx + yyy;
+console.log(zzz);
  
