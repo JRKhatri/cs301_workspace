@@ -2,7 +2,7 @@
 "use strict";
 const prompt = require("prompt-sync")();
 let  number = parseInt(prompt("Enter number"));
-let factorial =1;
+let factorial = 1;
 while(number > 1){
     factorial = factorial * number;
  number--;
