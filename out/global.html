@@ -104,7 +104,7 @@
     
 
     
-    <h4 class="name" id="hcf"><span class="type-signature"></span>hcf<span class="signature">(nbr1, nbr2)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="add"><span class="type-signature"></span>add<span class="signature">(num1, num2)</span><span class="type-signature"> &rarr; {number}</span></h4>
     
 
     
@@ -144,7 +144,7 @@
 
         <tr>
             
-                <td class="name"><code>nbr1</code></td>
+                <td class="name"><code>num1</code></td>
             
 
             <td class="type">
@@ -160,14 +160,14 @@
 
             
 
-            <td class="description last">number for finding hcf</td>
+            <td class="description last">first number for addition</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>nbr2</code></td>
+                <td class="name"><code>num2</code></td>
             
 
             <td class="type">
@@ -183,7 +183,7 @@
 
             
 
-            <td class="description last">number for finding hcf</td>
+            <td class="description last">second number for addition</td>
         </tr>
 
     
@@ -224,7 +224,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="que5.js.html">que5.js</a>, <a href="que5.js.html#line13">line 13</a>
+        <a href="que7.js.html">que7.js</a>, <a href="que7.js.html#line11">line 11</a>
     </li></ul></dd>
     
 
@@ -253,7 +253,7 @@
 
         
 <div class="param-desc">
-    hcf of two number
+    Sum of two number
 </div>
 
 
@@ -282,7 +282,7 @@
     
 
     
-    <h4 class="name" id="lcm"><span class="type-signature"></span>lcm<span class="signature">(nbr1, nbr2)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    <h4 class="name" id="calcult"><span class="type-signature"></span>calcult<span class="signature">(add, num1, num2)</span><span class="type-signature"> &rarr; {number}</span></h4>
     
 
     
@@ -322,13 +322,13 @@
 
         <tr>
             
-                <td class="name"><code>nbr1</code></td>
+                <td class="name"><code>add</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">number</span>
+<span class="param-type">function</span>
 
 
             
@@ -338,14 +338,14 @@
 
             
 
-            <td class="description last">number for finding LCM</td>
+            <td class="description last">addition function for two numbers</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>nbr2</code></td>
+                <td class="name"><code>num1</code></td>
             
 
             <td class="type">
@@ -361,7 +361,30 @@
 
             
 
-            <td class="description last">number for finding LCM</td>
+            <td class="description last">number for addition</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>num2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">number for addition</td>
         </tr>
 
     
@@ -402,7 +425,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="que5.js.html">que5.js</a>, <a href="que5.js.html#line31">line 31</a>
+        <a href="que7.js.html">que7.js</a>, <a href="que7.js.html#line50">line 50</a>
     </li></ul></dd>
     
 
@@ -431,7 +454,208 @@
 
         
 <div class="param-desc">
-    LCM of two number
+    sum value
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="compute"><span class="type-signature"></span>compute<span class="signature">(sum, no1, no2)</span><span class="type-signature"> &rarr; {number}</span></h4>
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>sum</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">function for addition</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>no1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">first number for addition</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>no2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">second number for addition</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="que7.js.html">que7.js</a>, <a href="que7.js.html#line21">line 21</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Sum of two number
 </div>
 
 
@@ -470,13 +694,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#hcf">hcf</a></li><li><a href="global.html#lcm">lcm</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#add">add</a></li><li><a href="global.html#calcult">calcult</a></li><li><a href="global.html#compute">compute</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Wed Mar 03 2021 20:56:41 GMT-0600 (Central Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 3.6.6</a> on Wed Mar 03 2021 23:16:26 GMT-0600 (Central Standard Time)
 </footer>
 
 <script> prettyPrint(); </script>
