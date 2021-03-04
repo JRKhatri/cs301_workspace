@@ -1,13 +1,14 @@
+"use strict";
 const prompt = require ("prompt-sync")();
 let term = parseInt(prompt("Enter positive Integer:"));
 let pre = 0;
 let sum = 1;
 let series="";
-let x = '';
+let xxx = "";
 let newSum;
 for(let i = 0; i<=term-1; i++){
     if(i<2){
-        x = x + i + ",";
+        xxx = xxx + i + ",";
     } else {
         newSum = pre +sum;
         series =series + newSum +",";
@@ -17,5 +18,5 @@ for(let i = 0; i<=term-1; i++){
     
     
 }
-series = x + series;
+series = xxx + series;
 console.log(series);

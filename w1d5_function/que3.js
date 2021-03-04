@@ -7,38 +7,72 @@ roofVolume = triangleArea*depth
 triangleArea = √s(s−a)(s−b)(s−c)
 s = (a+b+c)/2
 Write separate functions for each of the named formulas */
+"use strict";
 
+/**
+ * 
+ * @param {number} width user input width of house
+ * @param {number} height user input height of house
+ * @param {number} depth user input depth of house
+ * @return {number} Volume of house excluding roof volume
+ */
 function livingVolume(width, height, depth){
-    let liv_vol = width * height * depth;
-    console.log("livingVolume = " + liv_vol)
-    return liv_vol;
+    let livVol = width * height * depth;
+    console.log("livingVolume = " + livVol);
+    return livVol;
 }
 
-function triangleArea(width,sweep){
-    let s = (sweep + sweep + width)/2;
-    console.log("s = " + s);
-    let area = Math.sqrt(s*(s-sweep)*(s-sweep)*(s-width));
-    console.log("triangleArea = " + area)
+/**
+ * 
+ * @param {number} width user input width of house
+ * @param {number} sweep user input sweep of house
+ * @return {number} area of house
+ */
+function triangleArea(width, sweep){
+    let roofPeri = (sweep + sweep + width) / 2;
+    console.log("Half perimeter of roof= " + roofPeri);
+    let area = Math.sqrt(roofPeri * (roofPeri - sweep) * (roofPeri - sweep) * (roofPeri - width));
+    console.log("triangleArea = " + area);
     return area;
 }
-function roofVolume (width,depth,sweep){
-    let r_volume = triangleArea(width, sweep) * depth;
-    console.log("roofVolume = " + r_volume)
-    return r_volume;
+
+/**
+ * 
+ * @param {number} width user input width of house
+ * @param {nuber} depth user input depth of house
+ * @param {number} sweep user input sweep of house
+ * @return {numbr} Volume of roof
+ */
+function roofVolume(width, depth, sweep){
+    let rfVolume = triangleArea(width, sweep) * depth;
+    console.log("roofVolume = " + rfVolume);
+    return rfVolume;
 }
-function houseVolume(w,h,d,s) {
-    let h_vol = livingVolume(w, h, d) + roofVolume(w,d,s);
-    console.log("houseVolume = " + h_vol);
-    return h_vol;
+
+/**
+ * 
+ * @param {number} wth  user input width of house
+ * @param {numbr} hht  user input height of house
+ * @param {number} dth  user input depth of house 
+ * @param {number} swp  user input sweep of house
+ * @return {number} Total Volume of House
+ */
+function houseVolume(wth, hht, dth, swp) {
+    let hsVol = livingVolume(wth, hht, dth) + roofVolume(wth, dth, swp);
+    console.log("houseVolume = " + hsVol);
+    return hsVol;
 }
+
 const prompt = require("prompt-sync")();
-let input_width = +prompt ("Enter width of the house : ");
-let input_height = +prompt ("Enter height of the house: ");
-let input_depth = +prompt ("Enter the depth of hourse: ");
-let input_sweep = +prompt ("Enter the sweep of the house: ");
-let total_Volume = houseVolume(input_width, input_height, input_depth, input_sweep);
+
+let inputWidth = +prompt ("Enter width of the house : ");
+let inputHeight = +prompt ("Enter height of the house: ");
+let inputDepth = +prompt ("Enter the depth of hourse: ");
+let inputSweep = +prompt ("Enter the sweep of the house: ");
+let totalVolume = houseVolume(inputWidth, inputHeight, inputDepth, inputSweep);
+
 console.log("Answer");
- console.log("Total volume of House is : " + Math.round(total_Volume));
+ console.log("Total volume of House is : " + Math.round(totalVolume));
  
 
 
