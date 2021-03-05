@@ -9,7 +9,7 @@ passed in the function.
  * @param {number} times number of time elements shoud be rotated
  * @returns {Object} right rotated array
  */
-function rotateTimes(arr, times){
+function rotateNRight(arr, times){
     let count = 1;
     while(count <= times){
     let element = arr.shift();
@@ -19,4 +19,4 @@ function rotateTimes(arr, times){
     return arr;
 }
 
-console.log(rotateTimes([1,2,3,4,5], 3));
+console.log(rotateNRight([-1, -100, 1, 2, 3, -55], 3));

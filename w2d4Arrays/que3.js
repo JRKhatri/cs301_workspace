@@ -1,26 +1,24 @@
-/**
- * Write a function, isArrayEqual, that returns true if two arrays have === elements, else returns false.
+/**Write a function named getMiddle that returns the value of the middle element in an array. 
+ * If the array has an even number of elements, then this function must return the average of the 
+ * two middle elements.
  */
 
  ("use strict");
  /**
   * 
-  * @param {Object} arr1 array to be tested for equal
-  * @param {Object} arr2 array to be tested for equal
-  * @returns {Boolean};
+  * @param {Object} arr array of numbers
+  * @returns {number} value of the middle element in an array
   */
- function isArrayEqual(arr1, arr2){
+     function getMiddle(arr){
+         let index = Math.floor(arr.length / 2);
+         if(arr.length % 2 !== 0){
+            return arr[index];
 
- for(let i = 0; i < arr1.length; i++){
+         } else {
+             let average = (arr[index -1] + arr[index]) / 2;
+             return average;
+             
+         }
 
-     if(arr1[i] !== arr2[i]) {
-         return false;
-     }  
      }
-     return true;
-     
- }
-
- let arr1 = [1,2,3,4,23];
- let arr2= [1,2,3,4,23];
- console.log(isArrayEqual(arr1, arr2));
+ console.log(getMiddle([1,2,3,4,5,7]));

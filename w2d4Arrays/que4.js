@@ -8,9 +8,9 @@
  * @returns {Object};
  */
 function rotateLeft(arr){
-    let last = arr.pop();
+    let first = arr.shift();
+    arr.push(first);
     
-    arr.unshift(last);
    return  arr;
 }
 

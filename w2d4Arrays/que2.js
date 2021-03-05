@@ -1,24 +1,18 @@
-/**Write a function named getMiddle that returns the value of the middle element in an array. 
- * If the array has an even number of elements, then this function must return the average of the 
- * two middle elements.
+/**
+ * 1. Write a function addend(arr) that accepts an array of numbers as parameters and returns the sum of 
+ * first and last elements of the array.
  */
 
  ("use strict");
  /**
   * 
   * @param {Object} arr array of numbers
-  * @returns {number} value of the middle element in an array
+  * @returns {number} sum of first and last element of array
   */
-     function getMiddle(arr){
-         let index = Math.floor(arr.length / 2);
-         if(arr.length % 2 !== 0){
-            return arr[index];
+ function addends(arr){
+     let last = arr.length - 1 ;
+     return arr[0] + arr[last];
+ }
 
-         } else {
-             let average = (arr[index -1] + arr[index]) / 2;
-             return average;
-             
-         }
-
-     }
- console.log(getMiddle([1,2,3,4,5,7]));
+ console.log (addends([1, 2, 3, 4, 4]));
+ 

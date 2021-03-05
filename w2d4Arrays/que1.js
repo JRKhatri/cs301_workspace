@@ -1,18 +1,29 @@
 /**
- * 1. Write a function addend(arr) that accepts an array of numbers as parameters and returns the sum of 
- * first and last elements of the array.
+ * Write a function, isArrayEqual, that returns true if two arrays have === elements, else returns false.
  */
 
  ("use strict");
  /**
   * 
-  * @param {Object} arr array of numbers
-  * @returns {number} sum of first and last element of array
+  * @param {Object} arr1 array to be tested for equal
+  * @param {Object} arr2 array to be tested for equal
+  * @returns {Boolean};
   */
- function addend(arr){
-     let last = arr.length - 1 ;
-     return arr[0] + arr[last];
+ function isArrayEqual(arr1, arr2){
+     if(arr1.length !== arr1.length){
+         return false;
+     }
+
+ for(let i = 0; i < arr1.length; i++){
+
+     if(arr1[i] !== arr2[i]) {
+         return false;
+     }  
+     }
+     return true;
+     
  }
 
- console.log (addend([1, 2, 3, 4, 4]));
- 
+ let arr1 = [1,2,3,4,23];
+ let arr2= [1,2,3,4,23];
+ console.log(isArrayEqual(arr1, arr2));

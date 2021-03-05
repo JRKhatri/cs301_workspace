@@ -9,8 +9,8 @@
  * @returns {Object} roated array
  */
 function rotateRight( arr ){
-    let first = arr.shift();
-    arr.push(first);
+    let last = arr.pop();
+    arr.unshift(last);
     return arr;
 }
 console.log(rotateRight([1,2,3,4,5,6]));

@@ -14,6 +14,9 @@
   * @returns {Boolean};
   */
   function isArrayEqual(arr1, arr2){
+      if(arr1.length !== arr2.length){
+          return false;
+      }
 
     for(let i = 0; i < arr1.length; i++){
    
@@ -24,8 +27,9 @@
         return true;
         
     }
-    isArrayEqual(arr1, arr2);
     isArrayEqual(arr1, arr3);
+    isArrayEqual(arr1, arr2);
+    
 
  /**
   * 
@@ -57,12 +61,64 @@
 
 }
 getMiddle([1,2,3,4,5,7]);
+getMiddle([1,2,3,4,5]);
+
+
+/**
+ * 
+ * @param {Object} arr array whose last element should be rotated to left
+ * @returns {Object};
+ */
+ function rotateLeft(arr){
+    let first = arr.shift();
+    arr.push(first);
+    return arr;
+    
+}
+rotateLeft([2,3,4,5]);
+rotateLeft([1,2,3,4,5]);
+
+
+
+
+/**
+ * 
+ * @param {Object} arr array whose first element should be rotated to right.
+ * @returns {Object} roated array
+ */
+ function rotateRight( arr ){
+    let last = arr.pop();
+    arr.unshift(last);
+   return  arr;
+    
+}
+rotateRight([1,2,3,4,5,6]);
+//rotateRight ([7,6,5,4,3,2,1]);
+
+
+
+/**
+ * 
+ * @param {Object} arr array whose elements should be rotated
+ * @param {number} times number of time elements shoud be rotated
+ * @returns {Object} right rotated array
+ */
+ function rotateNRight(arr, times){
+    let count = 1;
+    while(count <= times){
+    let element = arr.pop();
+    arr.unshift(element);
+    count++;
+    }
+    return arr;
+}
+
+rotateNRight([1,2,3,4,5], 3);
 
 
 
 
 
 
-
-    module.exports= {isArrayEqual, addends, getMiddle};
+    module.exports= {isArrayEqual, addends, getMiddle,rotateLeft, rotateRight, rotateNRight};
 

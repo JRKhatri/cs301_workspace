@@ -16,8 +16,8 @@ describe("isArrayEqual", function () {
 
 });
 
-describe("addend", function () {
-    it("tests addend even number of elements", function () {
+describe("addends", function () {
+    it("tests addends even number of elements", function () {
         assert.strictEqual(arrays.addends([-1, -100, 1, 2, 3, -55]), -56);
     });
 
@@ -61,7 +61,7 @@ describe("rotateRight", function () {
 
 describe("rotateNRight", function () {
     it("tests rotateNRight 3", function () {
-        assert.deepStrictEqual(arrays.rotateNRight([-1, -100, 1, 2, 3, -55], 3), [2, 3, -55, -1, -100, 1, 2]);
+        assert.deepStrictEqual(arrays.rotateNRight([-1, -100, 1, 2, 3, -55], 3), [2, 3, -55, -1, -100, 1]);
     });
 
     it("tests rotateNRight 4", function () {
