@@ -4,10 +4,14 @@
  */
 
 function reversedCopy(arr){
-    let copy = [];
-    while(arr.length > 0){
-    copy[arr.length-1] = arr.splice(-1);
-    return copy;
-}
+    let copy =[];
+    let size = arr.length;
+    let i = 0;
+    while(i< size){
+         copy[i]= arr.splice(-1);
+        i++;
+    }
+    
+return copy;
 }
 console.log(reversedCopy([1,2,3,4]));
