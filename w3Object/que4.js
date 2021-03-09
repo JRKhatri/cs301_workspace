@@ -3,7 +3,13 @@
  *  For example, the common suffix of “swimming” and “walking” is “ing”. 
  * This function takes two parameters and returns the common suffix.
  */
-
+("use strict");
+/**
+ * 
+ * @param {String} str1 first text
+ * @param {String} str2 second text
+ * @returns {String} common suffix of two text
+ */
 function suffix(str1, str2){
     let length1 = str1.length;
     let length2 = str2.length;
@@ -18,5 +24,5 @@ function suffix(str1, str2){
     }
     return suffix;
 }
-
-console.log(suffix("swmming","running"))
+console.log(suffix("swimming","walking"));
+console.log(suffix("sing","good"));

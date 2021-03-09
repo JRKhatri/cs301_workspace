@@ -11,13 +11,16 @@ g. Without modifying the code structure of the object, Remove property make from
 object
 h. Print the object
  */
+("use strict");
+
+
 
 let  car = {};
 car.name = "Toyota";
-car.model = "Camry"
+car.model = "Camry";
 console.log(car);
 car.model = "RAV4";
-console.log(car["model"])  // while assessining the property like model by [] style use "model".
+console.log(car["model"]);  // while assessining the property like model by [] style use "model".
 delete car.name;
 delete car.model;
 console.log(car);

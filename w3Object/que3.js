@@ -2,13 +2,24 @@
  * write a function   that returns true if str contains text "lottery" or "prize",
 otherwise return false.
  */
-
+("use strict");
+/**
+ * 
+ * @param {String} str whose word is to check 
+ * @returns {Boolean} ;
+ */
 function checkSpam(str){
-    return str === "lottery" || str === "prize";
+    let newStr = str.split(" ");
+    for(let check of newStr){
+        if (check === "lottery" || check === "prize"){
+         return true;
+        }
+            
+        
+    }
+    return false;
+    
 }
 
-console.log(checkSpam("happu"));
-console.log(checkSpam("lottery"));
-console.log(checkSpam(" "));
-console.log(checkSpam("prize"));
-console.log(checkSpam("   prize"));
+console.log(checkSpam("there is lottery and prize"));
+console.log(checkSpam("there is nolottery and noprize"));
