@@ -36,3 +36,16 @@ console.log(nArray)
 console.log(sumP);
 console.log(sumN);
 console.log(sumOfAll)
+
+
+
+
+// function fileter(arr){
+// let filt =[];
+// for(let n of arr){
+//     if(n<0){
+//         filt.push(n)
+//     }
+// }
+// return filt;
+// }

@@ -15,4 +15,4 @@ function enhancedIncludes(arr, search){
     return result;
 }
 
-console.log(enhancedIncludes([1,2,3,4,5,4,6,7,4,5],4));
+console.log(enhancedIncludes([1,2,1,3,4],1));
