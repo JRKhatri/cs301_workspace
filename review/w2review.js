@@ -11,6 +11,19 @@ function sortNum(a,b){
     return a-b;
 }
 
+fuction secLarge (arr){
+    let largest = arr[0];
+    let second = arr[0];
+    for(let n of arr){
+        if(n > largest){
+            second = largest;
+            largest = n;
+        } else if(n > second){
+            second = n;
+        }
+    }
+}
+
 console.log(secondHighest([2,4,6,3,8,6,8,5,9,19,1,2,4,20]))
 
 /**
@@ -21,7 +34,7 @@ console.log(secondHighest([2,4,6,3,8,6,8,5,9,19,1,2,4,20]))
 function testEven(arr){
     let count1 =0;
     let count2 = 0
-    for(let i =0; i<arr.length; i++) {
+    for(let i =0; i<arr.length; i++) {   //can use    for(let n of arr){}
         if(arr[i] % 2=== 0){
             count2 +=1;
         } else {
@@ -46,7 +59,7 @@ function deleteArrayElement(arr, ind){
         if( i == ind){
             continue;
         }
-        newArray[index]= arr[i];
+        newArray[index]= arr[i];    /// Or     newArray.push(arr[i])
         index +=1;
     }
 return newArray;
@@ -84,7 +97,7 @@ function equalArr(arr1, arr2){
     if(arr1.length !== arr2.length){
         return false;
     }
-    arr1.sort(sortNum);
+    arr1.sort(sortNum);   // (a,b) => a - b;
     arr2.sort(sortNum);
 
     for(let i = 0; i<arr1.length; i++){
