@@ -1,0 +1,11 @@
+
+           #output{
+                color:red;
+                border:green dotted;
+            }
+        #but{
+            color :tomato;
+            background-color: khaki;
+        }
+        .butchange{background-color:rgb(120, 47, 255)}
+        

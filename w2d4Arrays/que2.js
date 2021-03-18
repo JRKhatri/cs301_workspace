@@ -9,10 +9,25 @@
   * @param {Object} arr array of numbers
   * @returns {number} sum of first and last element of array
   */
- function addends(arr){
-     let last = arr.length - 1 ;
-     return arr[0] + arr[last];
- }
+ 
+ 
+//  function addends(arr){
+//      var i = 25;
+//      i = 15;
+//      console.log(i);
+//      let last = arr.length - 1 ;
+//      return arr[0] + arr[last];
+//  }
 
- console.log (addends([1, 2, 3, 4, 4]));
+//  console.log (addends([1, 2, 3, 4, 4]));
+ 
+//  console.log(i);
+
+
+
+
+
+
+
+
  

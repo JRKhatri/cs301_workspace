@@ -23,3 +23,31 @@ return str;
 }
 
 console.log(titleCase(" i love java script and i always love coding    "));
+
+// let words =  string.split(" "; // gives as array
+
+function lastUpper(string){
+    let arrStr = string.split(" ");
+     let char = "";
+    for(let n of arrStr){
+        last = n.substr(n.length-1,1)
+    char += " " +n.substr(0,n.length-1) + last.toUpperCase();
+    }
+    return char;
+
+}
+console.log(lastUpper("i love you"));
+console.log(("i love you").length);
+
+function reverseString(string){
+    let arrStr = string.split(" ");
+    console.log(arrStr);
+    let char = "";
+    for(let m of arrStr){
+        char = m +" "+ char; 
+    }
+    return char;
+}
+console.log(reverseString("i love you"));
+
+

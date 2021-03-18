@@ -1,0 +1,18 @@
+/*
+CSE 190 M, Summer 2012, Roy McElmurry
+CSS styles for tip calculator page
+*/
+body{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+body,input,button{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25pt;
+}
+div {
+    margin: 0.10em;
+}
+.awesome {
+	background-color: pink;
+}

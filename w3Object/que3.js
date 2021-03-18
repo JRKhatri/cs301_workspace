@@ -23,3 +23,9 @@ function checkSpam(str){
 
 console.log(checkSpam("there is lottery and prize"));
 console.log(checkSpam("there is nolottery and noprize"));
+
+
+//return (str.includes("lottery")|| str.includes("prize")
+    
+
+

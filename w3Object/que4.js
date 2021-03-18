@@ -26,3 +26,6 @@ function suffix(str1, str2){
 }
 console.log(suffix("swimming","walking"));
 console.log(suffix("sing","good"));
+
+//
+//

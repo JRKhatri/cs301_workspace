@@ -1,0 +1,99 @@
+body{
+    background-color: lightblue;
+    color: rgb(83, 46, 117);
+
+}
+#logoPara{
+    background-color:rgb(250, 249, 245);
+    display:inline-flexbox;
+    text-indent: 25px;
+    line-height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(129, 129, 20);
+}
+
+
+#titlePara{
+    
+    background-color: rgb(9, 9, 100);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: floralwhite;
+    line-height: 50px;
+    text-indent :30px;
+    font-size:18pt;
+    text-align: center;
+}
+#personalInfo{
+   
+    background-color: rgb(194, 189, 189);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    line-height: 30px;
+    text-indent :30px;
+    font-size:15pt
+    
+}
+#field{
+    display:flex;
+    justify-content:stretch;
+    line-height: 30px;
+    text-indent :30px;
+    font-size:15pt;
+    margin-left:  10%;
+    margin-right:10% ;
+
+}
+#bmiCal{
+    
+    display:flexbox;
+    background-color: rgb(238, 237, 226);
+    color-adjust:black ;
+}
+#clear{
+    color: rgb(134, 38, 9);
+    background-color: rgb(134, 175, 204);
+    font-size:15pt ;
+    line-height: 30px;
+}
+#butBmi{
+    color: rgb(134, 38, 9);
+    background-color: rgb(134, 175, 204);
+    font-size:15pt ;
+    line-height: 30px;
+}
+#bmiResult{
+    margin: left 10px;
+    margin-right:10% ;
+    display:flexbox;
+    background-color: rgb(226, 210, 220);
+    color-adjust:black ;
+
+}
+#butDescription{
+    color: rgb(134, 38, 9);
+    background-color: rgb(134, 175, 204);
+    font-size:15pt ;
+    line-height: 30px;
+}
+#spanResult{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+    line-height: 50px;
+    text-indent :0vmax;
+    font-size:20pt;
+    text-align: center;
+
+}
+.yellow{
+    background-color:yellow;
+}
+.green{
+    background-color:green
+}
+
+.orange{
+   background-color:orange
+}
+.red{
+    background-color:red;
+}

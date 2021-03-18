@@ -11,7 +11,7 @@ function sortNum(a,b){
     return a-b;
 }
 
-fuction secLarge (arr){
+function secLarge(arr){
     let largest = arr[0];
     let second = arr[0];
     for(let n of arr){
@@ -22,9 +22,10 @@ fuction secLarge (arr){
             second = n;
         }
     }
+    return second;
 }
-
-console.log(secondHighest([2,4,6,3,8,6,8,5,9,19,1,2,4,20]))
+console.log(secLarge([2,4,6,3,8,6,8,5,9,18,19,17,1,2,4,20]))
+console.log(secondHighest([2,4,6,3,8,6,8,5,19,16,17,18,2,4,20]))
 
 /**
  * 2. An evenDominated array is an array that has count of even elements in the array more than 
