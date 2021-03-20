@@ -9,9 +9,9 @@ function pageLoad(){
 }
 
 function bmiCalculation(){
-    const height = document.getElementById("height").value;
-    const weight = document.getElementById("weight").value;
-    let bmiVal = Math.round(weight / Math.pow(height,2));
+    const height = document.getElementById("height");
+    const weight = document.getElementById("weight");
+    let bmiVal = Math.round(weight.value / Math.pow(height.value,2));
     displayResult(bmiVal);
     
 
@@ -82,10 +82,13 @@ function displayResult(val){
     function validate(){
         let fname=document.getElementById("fname");
         let lname= document.getElementById("lname");
-        if(fname.value === "" || lname.value ===""){
-            alert("Personal Information Missing !")
+        let bmidata= document.getElementById("spanResult");
+        if(fname.value === ""||lname.value ===""||bmidata.innerHTML==="NaN"||bmidata.innerHTML===""){
+            alert("Information Missing!")
             return false;
         }
+        
+            
         return true;
     }
     
