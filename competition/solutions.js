@@ -57,7 +57,7 @@ console.log(divisionSumPairs([1,3,2,6,1,2],3))
     
    }
    console.log(mostFrequentSight([1,4,4,4,5,3]));
-   module.exports = { mostFrequentSight };
+  // module.exports = { mostFrequentSight };
    
 //Question 2 by Jyoti
 
